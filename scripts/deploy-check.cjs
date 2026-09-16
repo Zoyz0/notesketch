@@ -4,7 +4,12 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { resolveSiteUrl } = require('./site-url.cjs');
 const root = path.join(__dirname, '..');
-const placeholder = 'https://notesketch.example/';
+const placeholder = 'https://placeholder.example/';
+
+test('the configured default uses the Notesketch production URL', () => {
+  const config = JSON.parse(fs.readFileSync(path.join(root, 'site.config.json'), 'utf8'));
+  assert.equal(resolveSiteUrl(config.siteUrl, {}).href, 'https://notesketch.vercel.app/');
+});
 
 test('localhost preserves the placeholder', () => {
   assert.equal(resolveSiteUrl(placeholder, {}).href, placeholder);
@@ -73,7 +78,7 @@ for (const environment of ['production', 'preview']) {
         assert.ok(html.includes(`rel="canonical" href="https://notesketch.vercel.app/${page}"`));
         assert.ok(html.includes('content="https://notesketch.vercel.app/social-card.png"'));
         assert.ok(html.includes(`name="robots" content="${environment === 'preview' ? 'noindex,follow' : 'index, follow, max-image-preview:large'}"`));
-        assert.ok(!html.includes('https://notesketch.example/'));
+        assert.ok(!html.includes('.example/'));
       }
       const files = new Map();
       plugin.generateBundle.call({ emitFile: asset => files.set(asset.fileName, asset.source),

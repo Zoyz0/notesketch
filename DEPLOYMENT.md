@@ -16,9 +16,9 @@ Alternatively, push the source to a Git repository and import it in Vercel. Sele
 
 ## Domain and SEO
 
-Keep the placeholder in `site.config.json` for localhost. On Vercel, the build uses `VERCEL_PROJECT_PRODUCTION_URL` (or `VERCEL_URL` as a fallback) to generate real canonical URLs, social image URLs, and the sitemap. Enable access to System Environment Variables in the project's Environment Variables settings if it is disabled.
+The public site URL in `site.config.json` is `https://notesketch.vercel.app/`. The build uses this stable production URL for canonical links, social image URLs, structured data, and the sitemap. Local and preview builds use the same canonical domain; preview pages get `noindex,follow` metadata.
 
-For a specific custom canonical domain, add `NOTESKETCH_SITE_URL=https://your-domain.com/` in Vercel's environment settings and redeploy. A real domain configured in `site.config.json` also overrides automatic detection. Do not copy `https://notesketch.example/` into Vercel's environment settings. When adding/changing a domain, redeploy so the generated SEO files are updated.
+To override the configured domain, set `NOTESKETCH_SITE_URL` in Vercel's environment settings (for the current site, `https://notesketch.vercel.app/`) and redeploy. Alternatively, change `site.config.json`. When adding/changing a domain, redeploy so the generated SEO files are updated. If the JSON URL is ever changed back to a reserved `.example` placeholder, Vercel system environment variables provide automatic production-domain detection instead.
 
 Preview builds get `noindex,follow` metadata on both pages and continue pointing to the production canonical domain. Production builds are indexable; deployment protection must allow public access for search crawlers. Complete the Search Console steps in [SEO-SETUP.md](./SEO-SETUP.md) after publishing.
 

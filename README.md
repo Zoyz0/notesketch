@@ -62,7 +62,7 @@ Alternatively, deploy from the project folder:
 npx vercel --prod
 ```
 
-Localhost keeps the reserved `https://notesketch.example/` SEO placeholder. Vercel builds automatically use the project's production domain when system environment variables are available. For a preferred custom canonical domain, set `NOTESKETCH_SITE_URL=https://your-domain.com/` and redeploy. Preview builds use `noindex,follow` metadata.
+The canonical site URL is `https://notesketch.vercel.app/`, configured in `site.config.json`. Builds use it for canonical links, social image URLs, structured data, and the sitemap, including when developing locally. To change the domain, update `site.config.json` or override it with `NOTESKETCH_SITE_URL` and redeploy. Preview builds use `noindex,follow` metadata.
 
 See [deployment instructions](./DEPLOYMENT.md) and [SEO setup](./SEO-SETUP.md) for domain configuration, sitemaps, and search-engine submission.
 

@@ -1,4 +1,4 @@
-// Keep localhost SEO placeholders, but use the stable production domain on Vercel.
+// Prefer the configured public URL, with automatic Vercel fallback for placeholders.
 function resolveSiteUrl(configuredUrl, env = process.env) {
   const explicit = env.NOTESKETCH_SITE_URL;
   const configured = new URL(configuredUrl);
