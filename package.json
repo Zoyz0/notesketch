@@ -1,0 +1,16 @@
+{
+  "name": "notesketch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notesketch - Draw music online, play instruments, and create sound loops",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:browser": "node scripts/browser-check.cjs",
+    "test:deploy": "node --test scripts/deploy-check.cjs"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

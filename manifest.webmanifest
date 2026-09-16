@@ -1,0 +1,21 @@
+{
+  "name": "Notesketch - Draw Music Online",
+  "short_name": "Notesketch",
+  "description": "Draw melodies, play nine instruments, and create sound loops with Notesketch, a free visual music maker in your browser.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf9f7",
+  "theme_color": "#faf9f7",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

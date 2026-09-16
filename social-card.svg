@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Notesketch — Draw music. Sketch sound.</title>
+  <desc>Notesketch artwork with colorful musical traces, instrument swatches, and piano keys.</desc>
+  <defs><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#e9e4dc" stroke-width="1"/></pattern></defs>
+  <rect width="1200" height="630" fill="#faf9f7"/>
+  <rect x="26" y="26" width="1148" height="578" rx="30" fill="#fffefb" stroke="#e5e0d8" stroke-width="2"/>
+  <rect x="560" y="58" width="582" height="400" rx="20" fill="url(#grid)"/>
+  <g fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 94C76 68 88 120 100 94S124 120 136 94" stroke="#d85a30" stroke-width="5"/>
+    <path d="M592 298L676 190L760 310L844 208L928 302L1106 138" stroke="#d85a30"/>
+    <path d="M596 356C668 248 726 432 806 338S960 252 1106 358" stroke="#1d9e75"/>
+    <ellipse cx="980" cy="126" rx="94" ry="34" stroke="#85bee8"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#18181b">
+    <text x="156" y="106" font-size="42" font-weight="700">Notesketch</text>
+    <text x="66" y="224" font-size="60" font-weight="700">Draw music.</text>
+    <text x="66" y="294" font-size="60" font-weight="700">Sketch sound.</text>
+    <text x="68" y="350" font-size="23" fill="#52525b">A free music maker in your browser.</text>
+    <text x="68" y="567" font-size="19" fill="#52525b">9 instruments · Piano · Loops · WAV / MIDI / PNG</text>
+  </g>
+  <g transform="translate(72 414)">
+    <circle cx="20" cy="20" r="20" fill="#1d9e75"/><circle cx="78" cy="20" r="20" fill="#d85a30"/><circle cx="136" cy="20" r="20" fill="#7f77dd"/>
+    <circle cx="194" cy="20" r="20" fill="#ef9f27"/><circle cx="252" cy="20" r="20" fill="#3e5ec6"/><circle cx="310" cy="20" r="20" fill="#de7bae"/>
+    <circle cx="368" cy="20" r="20" fill="#85bee8"/><circle cx="426" cy="20" r="20" fill="#33312b"/><circle cx="484" cy="20" r="20" fill="#f4be82"/>
+  </g>
+  <g transform="translate(596 476)">
+    <rect width="510" height="90" rx="12" fill="#ffffff" stroke="#e5e0d8"/>
+    <path d="M51 0V90M102 0V90M153 0V90M204 0V90M255 0V90M306 0V90M357 0V90M408 0V90M459 0V90" stroke="#e5e0d8"/>
+    <g fill="#18181b"><rect x="37" width="28" height="52" rx="3"/><rect x="88" width="28" height="52" rx="3"/><rect x="190" width="28" height="52" rx="3"/><rect x="241" width="28" height="52" rx="3"/><rect x="292" width="28" height="52" rx="3"/><rect x="394" width="28" height="52" rx="3"/><rect x="445" width="28" height="52" rx="3"/></g>
+    <path d="M4 84H47M106 84H149M208 84H251M310 84H353M412 84H455" stroke="#1d9e75" stroke-width="7"/>
+  </g>
+</svg>
