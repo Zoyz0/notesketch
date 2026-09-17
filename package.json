@@ -2,6 +2,7 @@
   "name": "notesketch",
   "version": "1.0.0",
   "private": true,
+  "license": "AGPL-3.0-only",
   "description": "Notesketch - Draw music online, play instruments, and create sound loops",
   "scripts": {
     "dev": "vite",

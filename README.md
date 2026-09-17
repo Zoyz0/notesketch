@@ -86,3 +86,7 @@ Use a modern browser with Canvas and Web Audio support. Audio may require a clic
 ## Credits
 
 Created by Dimas Mahardhika Wibowo. Inspired by [Play Music Theory](https://playmusictheory.net).
+
+## License
+
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](./LICENSE) file for details.
